@@ -15,6 +15,8 @@ namespace Ejercicio03
         public LabelCode()
         {
             InitializeComponent();
+
+            Title = "Label Code";
             StackLayout stack = new StackLayout();
             var underlineLabel = new Label
             {
@@ -34,7 +36,7 @@ namespace Ejercicio03
 
             stack.Children.Add(underlineLabel);
             stack.Children.Add(strikethroughLabel);
-            stack.Children.Add(strikethroughLabel);
+            stack.Children.Add(bothLabel);
             Content = stack;
         }
     }
